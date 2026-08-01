@@ -12,7 +12,7 @@ namespace Persistence
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<Listing> Students { get; set; }
+        public DbSet<Listing> Listings { get; set; }
 
     }
 }
