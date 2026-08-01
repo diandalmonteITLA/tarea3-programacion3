@@ -11,7 +11,7 @@ namespace Domain.Interfaces
     {
         Task<T?> GetByIdAsync(Guid id);
 
-        Task<IReadOnlyCollection<T>> GetAllAsync();
+        Task<IReadOnlyCollection<T>> GetAllAsync(bool includeInactive = false);
 
         Task AddAsync(T entity);
 
