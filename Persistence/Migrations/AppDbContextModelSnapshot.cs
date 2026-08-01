@@ -44,7 +44,7 @@ namespace Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Students");
+                    b.ToTable("Listings");
                 });
 #pragma warning restore 612, 618
         }
