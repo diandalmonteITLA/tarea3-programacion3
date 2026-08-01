@@ -1,8 +1,11 @@
 ﻿using System;
+using Domain.Interfaces;
+using Domain;
+using Microsoft.EntityFrameworkCore;
 
 namespace Persistence
 {
-    public class GenericRespository
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly AppDbContext _context;
 
